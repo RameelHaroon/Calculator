@@ -1,3 +1,15 @@
+const keyNode = document.querySelectorAll(".key");
+const displayValue = document.querySelector(".display");
+const clearBtn = document.querySelector(".key-clear");
+Array.from(keyNode).forEach((node) => {
+    node.addEventListener("click", () => {
+        const nodeValue = node.getAttribute('data-choice');
+        displayValue.innerHTML += " " + nodeValue;
+    });
+});
+
+clearBtn.addEventListener("click", () =>  displayValue.innerHTML = "");
+
 function add(a, b){
     return a + b;
 }

@@ -1,34 +1,42 @@
-*{
-    padding: 0px;
-    margin: 0px;
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
 }
 
-body{
-    background-color: bisque;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    margin-top: 100px;
+body {
+  background-color: bisque;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 100px;
 }
 
-.calculator-body{
-    width: 450px;
-    height: 550px;
-    background-color: rgb(58, 53, 53);
-    border-radius: 10px;
-    
-    display: flex;
-    flex-direction: column;
-    justify-content: space-evenly;
-    align-items: center;
+.calculator-body {
+  width: 450px;
+  height: 550px;
+  background-color: rgb(58, 53, 53);
+  border-radius: 10px;
 
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  align-items: center;
 }
 
-.display{
-    width: 350px;
-    height: 60px;
-    background-color: rgb(70, 153, 153);
-    border-radius: 10px;
+.display {
+  width: 350px;
+  height: 60px;
+  padding: 0 10px;
+  background-color: rgb(70, 153, 153);
+  border-radius: 10px;
+
+  font-size: 30px;
+  color: white;
+
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
 }
 
 .keypad {
@@ -54,10 +62,82 @@ body{
   border-radius: 50%;
   background-color: rgb(101, 169, 169);
   color: white;
+  border: none;
+  cursor: pointer;
 
   display: flex;
   justify-content: center;
   align-items: center;
+
+  /* Reset native button styles */
+  appearance: none;
+  -webkit-appearance: none;
+  outline: none;
+}
+
+.key {
+  font-size: 30px;
+  width: 60px;
+  height: 60px;
+  border-radius: 50%;
+  background-color: rgb(101, 169, 169);
+  color: white;
+  border: none;
+  cursor: pointer;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  /* Reset native button styles */
+  appearance: none;
+  -webkit-appearance: none;
+  outline: none;
+}
+
+.key-equal {
+  font-size: 30px;
+  width: 60px;
+  height: 60px;
+  border-radius: 50%;
+  background-color: rgb(101, 169, 169);
+  color: white;
+  border: none;
+  cursor: pointer;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  /* Reset native button styles */
+  appearance: none;
+  -webkit-appearance: none;
+  outline: none;
+}
+
+.key-clear {
+  font-size: 20px;
+  width: 60px;
+  height: 60px;
+  border-radius: 50%;
+  background-color: rgb(101, 169, 169);
+  color: white;
+  border: none;
+  cursor: pointer;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  /* Reset native button styles */
+  appearance: none;
+  -webkit-appearance: none;
+  outline: none;
+}
+
+.key:active {
+  background-color: rgb(80, 140, 140);
+  transform: scale(0.95);
 }
 
 .key.empty {
