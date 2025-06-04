@@ -95,44 +95,8 @@ body {
   outline: none;
 }
 
-.key-equal {
-  font-size: 30px;
-  width: 60px;
-  height: 60px;
-  border-radius: 50%;
-  background-color: rgb(101, 169, 169);
-  color: white;
-  border: none;
-  cursor: pointer;
-
-  display: flex;
-  justify-content: center;
-  align-items: center;
-
-  /* Reset native button styles */
-  appearance: none;
-  -webkit-appearance: none;
-  outline: none;
-}
-
-.key-clear {
+.key-clear{
   font-size: 20px;
-  width: 60px;
-  height: 60px;
-  border-radius: 50%;
-  background-color: rgb(101, 169, 169);
-  color: white;
-  border: none;
-  cursor: pointer;
-
-  display: flex;
-  justify-content: center;
-  align-items: center;
-
-  /* Reset native button styles */
-  appearance: none;
-  -webkit-appearance: none;
-  outline: none;
 }
 
 .key:active {

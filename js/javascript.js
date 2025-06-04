@@ -1,10 +1,19 @@
-const keyNode = document.querySelectorAll(".key");
+const numberKeyNode = document.querySelectorAll(".key-number");
+const operatorKeyNode = document.querySelectorAll(".key-operator");
 const displayValue = document.querySelector(".display");
 const clearBtn = document.querySelector(".key-clear");
-Array.from(keyNode).forEach((node) => {
+
+Array.from(numberKeyNode).forEach((node) => {
     node.addEventListener("click", () => {
         const nodeValue = node.getAttribute('data-choice');
-        displayValue.innerHTML += " " + nodeValue;
+        displayValue.innerHTML += nodeValue;
+    });
+});
+
+Array.from(operatorKeyNode).forEach((node) => {
+    node.addEventListener("click", () => {
+        const nodeValue = node.getAttribute('data-choice');
+        displayValue.innerHTML += " " + nodeValue + " ";
     });
 });
 
